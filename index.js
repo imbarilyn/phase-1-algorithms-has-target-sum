@@ -35,6 +35,9 @@ function hasTargetSum(array, target){
 
 /*
   Add written explanation of your solution here
+  My code is doing big O notation of O(n*2) which is a quadratic kind of thing. 
+  It has nested for loop one does first iteration and the other does second iteration
+  the two elements are summed up to give a summation that is compared to the target value.
 */
 
 // You can run `node index.js` to view these console logs
