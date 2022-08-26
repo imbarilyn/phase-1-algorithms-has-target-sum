@@ -1,13 +1,36 @@
-function hasTargetSum(array, target) {
+function hasTargetSum(array, target){
+  for(let i = 0; i < array.length; i++){
+    for(let j = i + 1; j < array.length; j++){
+      let sum = (array[i] + array[j]);
+      if(sum === target){
+        return true;
+      }
+    }
+  }
+  return false;
   // Write your algorithm here
 }
 
 /* 
   Write the Big O time complexity of your function here
+  my function is a quadratic kind of thing. It does two searches and compares 
+  the two values to see if it gives a given summation.
 */
 
 /* 
   Add your pseudocode here
+  function hasTargetSum(array, target){
+    for(does the first iteration){
+      for(does iteration fron the second index)
+      const sum = sums up two elements from every itreations
+      if(checks whether sum  === target){
+        return true if so
+      }
+      else{
+        return false
+      }
+    }
+  }
 */
 
 /*
